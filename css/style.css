@@ -1,0 +1,48 @@
+/* COLORS */
+/* #464246 */
+/* #cabcb0 */
+/* #f8f8f8 */
+/* #a5b9b9 */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  color: #464246;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) 15fr minmax(2rem, 1fr);
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-areas:
+    ". header ."
+    ". main ."
+    ". footer .";
+}
+
+.header {
+  grid-area: header;
+  background-color: red;
+}
+
+.main {
+  grid-area: main;
+  background-color: blue;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: green;
+}
