@@ -5,6 +5,7 @@
 /* #a5b9b9 */
 @import url("base.css");
 @import url("navigation.css");
+@import url("post.css");
 
 .header {
   grid-area: header;
@@ -115,10 +116,12 @@ label {
   margin-bottom: 4rem;
   transition: all 0.3s;
   outline: none;
+  text-decoration: none;
 }
 
 .card-btn:hover {
   background-color: #cabcb0;
+  border: 0.1rem solid #464246;
   color: #464246;
 }
 
