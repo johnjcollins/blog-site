@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* set root default font size to 10px (10 / 16 = .625) for easy rem calculation */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--color-background-light-1);
+}
+
+/* adjust default font size to screen width  */
+/* tablet - landscape  1200px */
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* tablet - portrait  900px */
+@media only screen and (max-width: 56.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* phone  600px */
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 45%;
+  }
+}
+/* big desktop  1800px */
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}

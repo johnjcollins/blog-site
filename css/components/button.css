@@ -1,0 +1,20 @@
+.btn {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-background-light-1);
+  border: 0.1rem solid var(--color-btn-light-1);
+  border-radius: 3rem;
+  font-size: 1.3rem;
+  color: var(--color-btn-light-1);
+  cursor: pointer;
+  margin-bottom: 4rem;
+  transition: all 0.3s;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--color-btn-light-2);
+  border: 0.1rem solid var(--color-text-dark);
+  color: var(--color-text-dark);
+}

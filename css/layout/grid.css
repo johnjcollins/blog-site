@@ -1,0 +1,36 @@
+.page {
+  max-width: var(--default-max-screen-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) 15fr minmax(1rem, 1fr);
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-areas:
+    ". header ."
+    ". main ."
+    ". footer .";
+  height: 100vh;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 2rem;
+  grid-template-areas:
+    "heading heading"
+    "content aside"
+    "about about"
+    "related related";
+}
+
+@media screen and (max-width: 56.25em) {
+  .post {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    grid-template-areas:
+      "heading"
+      "content"
+      "aside"
+      "about"
+      "related";
+  }
+}

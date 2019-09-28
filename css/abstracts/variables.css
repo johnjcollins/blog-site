@@ -1,0 +1,22 @@
+/* COLORS */
+/* #464246 */
+/* #cabcb0 */
+/* #f8f8f8 */
+/* #a5b9b9 */
+
+:root {
+  --color-text-dark: #464246;
+  --color-text-light-1: #f8f8f8;
+  --color-text-light-2: #a5b9b9;
+  --color-text-light-3: #cabcb0;
+  --color-background-dark: #464246;
+  --color-background-light-1: #f8f8f8;
+  --color-background-light-2: #a5b9b9;
+  --color-btn-light-1: #a5b9b9;
+  --color-btn-light-2: #cabcb0;
+  --color-twitter: #55acee;
+  --color-facebook: #3b5998;
+  --color-linkedin: #0077b5;
+
+  --default-max-screen-width: 144rem;
+}

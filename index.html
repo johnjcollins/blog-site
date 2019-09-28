@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="/img/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link
       href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Josefin+Sans:300,400,600,700&display=swap"
       rel="stylesheet"
     />
@@ -13,29 +43,35 @@
     <script src="https://kit.fontawesome.com/844f80b06b.js"></script>
   </head>
   <body>
-    <div class="page-container">
+    <div class="page">
+      <!-- hidden checkbox used to toggle hamburger menu -->
       <input type="checkbox" class="checkbox" id="click" hidden />
+
+      <!-- navigation -->
       <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a href="index.html" class="navigation-link">Home</a>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="index.html" class="navigation__link">Home</a>
           </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">Road</a>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Road</a>
           </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">Mountain</a>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Mountain</a>
           </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">Subscribe</a>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Subscribe</a>
           </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">Contact</a>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Contact</a>
           </li>
         </ul>
       </nav>
+      <!-- end of navigation -->
 
+      <!-- header -->
       <header class="header">
+        <!-- click on this label to check/uncheck hidden checkbox -->
         <label for="click">
           <div class="menu-icon">
             <div class="line line-1"></div>
@@ -43,105 +79,114 @@
             <div class="line line-3"></div>
           </div>
         </label>
-        <div class="title">
-          <span class="primary-title">Cycling</span>
-          <span class="secondary-title">Discover your world</span>
-        </div>
+        <a href="/" class="home-link">
+          <h1 class="title">
+            <span class="title--primary">Cycling</span>
+            <span class="title--secondary">Discover your world</span>
+          </h1>
+        </a>
         <i class="fas fa-search"></i>
       </header>
+      <!-- end of header -->
+
+      <!-- main -->
       <main class="main">
         <div class="cards">
           <div class="card">
             <img
               src="img/luiz-felipe-silva-carmo-pa0341Vzo3U-unsplash.jpg"
               alt="Cycling scene"
-              class="card-img"
+              class="card__img"
             />
-            <div class="card-date">
+            <div class="card__date">
               <div>Sep</div>
               <div>23</div>
             </div>
-            <div class="card-content">
-              <h2 class="card-heading">Explore Nature</h2>
-              <p class="card-text">
+            <div class="card__content">
+              <h2 class="card__heading">Explore Nature</h2>
+              <p class="card__text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea cum
                 ipsa temporibus aliquam rem eveniet optio fugit suscipit ratione
                 alias ipsa temporibus.
               </p>
-              <a href="#" class="card-btn">Read More</a>
+              <a href="blog-post-1.html" class="btn">Read More</a>
             </div>
           </div>
           <div class="card">
             <img
               src="img/landscape-1744370_1920.jpg"
               alt="Cycling scene"
-              class="card-img"
+              class="card__img"
             />
-            <div class="card-date">
+            <div class="card__date">
               <div>Aug</div>
               <div>16</div>
             </div>
-            <div class="card-content">
-              <h2 class="card-heading">Head For The Hills</h2>
-              <p class="card-text">
+            <div class="card__content">
+              <h2 class="card__heading">Head For The Hills</h2>
+              <p class="card__text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Doloremque quo nulla consequatur cumque aliquam tenetur nihil,
                 sint amet magnam mollitia?
               </p>
-              <a href="blog-post.html" class="card-btn">Read More</a>
+              <a href="blog-post-2.html" class="btn">Read More</a>
             </div>
           </div>
           <div class="card">
             <img
               src="img/bicycle-parking-bicycles-bikes-2239910.jpg"
               alt="Cycling scene"
-              class="card-img"
+              class="card__img"
             />
-            <div class="card-date">
+            <div class="card__date">
               <div>Jul</div>
               <div>9</div>
             </div>
-            <div class="card-content">
-              <h2 class="card-heading">See The City</h2>
-              <p class="card-text">
+            <div class="card__content">
+              <h2 class="card__heading">See The City</h2>
+              <p class="card__text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Temporibus velit dignissimos voluptates unde aliquid quaerat,
                 sequi distinctio cupiditate.
               </p>
-              <a href="#" class="card-btn">Read More</a>
+              <a href="blog-post-3.html" class="btn">Read More</a>
             </div>
           </div>
           <div class="card">
             <img
               src="img/polina-rytova-CsAHZVYzpZo-unsplash.jpg"
               alt="Cycling scene"
-              class="card-img"
+              class="card__img"
             />
-            <div class="card-date">
+            <div class="card__date">
               <div>Jun</div>
               <div>3</div>
             </div>
-            <div class="card-content">
-              <h2 class="card-heading">Hit The Road</h2>
-              <p class="card-text">
+            <div class="card__content">
+              <h2 class="card__heading">Hit The Road</h2>
+              <p class="card__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
                 dolor repellendus. Ipsa aut, quo obcaecati velit quos optio,
                 fugiat dolor, atque eaque praesentium!
               </p>
-              <a href="#" class="card-btn">Read More</a>
+              <a href="blog-post-4.html" class="btn">Read More</a>
             </div>
           </div>
         </div>
       </main>
+      <!-- end of main -->
+
+      <!-- footer -->
       <footer class="footer">
-        <ul class="footer-list">
-          <li><a href="index.html" class="footer-link">Home</a></li>
-          <li><a href="#" class="footer-link">Road</a></li>
-          <li><a href="#" class="footer-link">Mountain</a></li>
-          <li><a href="#" class="footer-link">Subscribe</a></li>
-          <li><a href="#" class="footer-link">Contact</a></li>
+        <ul class="footer__list">
+          <li><a href="index.html" class="footer__link">Home</a></li>
+          <li><a href="#" class="footer__link">Road</a></li>
+          <li><a href="#" class="footer__link">Mountain</a></li>
+          <li><a href="#" class="footer__link">Subscribe</a></li>
+          <li><a href="#" class="footer__link">Contact</a></li>
         </ul>
       </footer>
+      <!-- footer -->
     </div>
   </body>
 </html>

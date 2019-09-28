@@ -1,0 +1,159 @@
+.post__heading {
+  grid-area: heading;
+  text-align: center;
+}
+
+.post__img {
+  display: block;
+  width: 100%;
+}
+
+.post__date {
+  width: 10rem;
+  height: 10rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--color-text-light-1);
+  background-color: var(--color-background-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20rem;
+  transform: translateY(-50%);
+  margin: 0 auto;
+}
+
+.post__content {
+  grid-area: content;
+  width: 100%;
+}
+
+.post__caption {
+  font-size: 1.6rem;
+  padding: 1rem 0 2rem 0;
+  margin-bottom: 1rem;
+}
+
+.post__aside {
+  grid-area: aside;
+}
+
+.subscribe-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 0.1rem solid var(--color-background-dark);
+  color: var(--color-text-light-3);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--color-background-light-1);
+}
+
+.subscribe-form button {
+  display: block;
+  padding: 1rem 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  background-color: #464246;
+  border: none;
+  text-transform: uppercase;
+  color: #f8f8f8;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.subscribe-form button:hover {
+  background-color: #605b60;
+}
+
+.small-card {
+  background-color: #fff;
+  margin-bottom: 4rem;
+}
+
+.post__about {
+  grid-area: about;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 0.1rem solid #464246;
+  border-bottom: 0.1rem solid #464246;
+  padding: 3rem 0;
+  font-size: 1.6rem;
+}
+
+.post__avatar {
+  width: 15rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.post__avatar-img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.post__about-content {
+  width: 60%;
+}
+
+.post__about-author {
+  font-family: "Amatic SC", cursive;
+  color: #a5b9b9;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.post__about-content-list {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.post__about-content-list:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.post__about-social {
+  display: flex;
+  font-size: 2.5rem;
+  color: var(--color-text-dark);
+  list-style: none;
+}
+
+.post__about-social-item {
+  margin-right: 2rem;
+}
+
+.post__about-social-icon {
+  transition: color 0.2s;
+}
+
+.fa-twitter:hover {
+  color: var(--color-twitter);
+}
+
+.fa-facebook-f:hover {
+  color: var(--color-facebook);
+}
+
+.fa-linkedin:hover {
+  color: var(--color-linkedin);
+}
+
+.post__related {
+  grid-area: related;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .post__about {
+    flex-direction: column;
+  }
+}
