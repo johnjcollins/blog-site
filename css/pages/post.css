@@ -24,6 +24,10 @@
   margin: 0 auto;
 }
 
+.important {
+  text-decoration: underline;
+}
+
 .post__content {
   grid-area: content;
   width: 100%;
